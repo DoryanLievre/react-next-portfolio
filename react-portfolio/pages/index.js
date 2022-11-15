@@ -33,7 +33,7 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-600 dark:text-teal-50 font-medium ">Doryan Lièvre</h2>
             <h3 className="text-2xl py-2">Développeur</h3>
             <p className=" text-md py-5 leading-8 text-gray-800 dark:text-gray-200">
-              J'habite Rennes, je suis Alternant développeur web Chez Yes We Dev.
+              Habitant à Rennes, je suis Alternant développeur web Chez Yes We Dev.
               Scroller pour en savoir plus sur moi !
             </p>
           </div>
