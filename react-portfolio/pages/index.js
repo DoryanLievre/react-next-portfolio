@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
+import { BsFillMoonStarsFill, BsLinkedin, BsGithub, BsFillEnvelopeFill } from 'react-icons/bs';
 import Image from 'next/image';
 import profilPic from '../public/ProfilPic.png';
 import { useState } from 'react';
@@ -20,7 +20,7 @@ export default function Home() {
             <h1 className='text-xl uppercase font-bold dark:text-gray-200'>DL</h1>
             <ul className='flex items-center'>
               <li>
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl ' />
+                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl text-black dark:text-white ' />
               </li>
               <li>
                 <a className="bg-gradient-to-r from-cyan-500 to-teal-600 dark:bg-gradient-to-r dark:from-black dark:to-gray-700 text-white px-4 py-2 rounded-md ml-8" href="#">
@@ -29,16 +29,44 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+
+          <div className="flex md:flex-col justify-center fixed bottom-0 md:bottom-auto md:left-0 md:top-1/2  m-auto left-1/4 right-1/4 md:right-auto p-5 md:py-10 bg-gradient-to-b from-cyan-500 to-teal-600 dark:bg-gradient-to-r dark:from-teal-600 dark:to-teal-800 rounded-t-xl md:rounded-none md:rounded-r-xl space-x-10 md:space-x-0 md:space-y-10">
+            <BsLinkedin className="cursor-pointer text-2xl text-black dark:text-white" />
+            <BsGithub className="cursor-pointer text-2xl text-black dark:text-white" />
+            <BsFillEnvelopeFill className="cursor-pointer text-2xl text-black dark:text-white" />
+          </div>
+
           <div className="text-center p-10 ">
             <h2 className="text-5xl py-2 text-teal-600 dark:text-teal-50 font-medium ">Doryan Lièvre</h2>
             <h3 className="text-2xl py-2">Développeur</h3>
             <p className=" text-md py-5 leading-8 text-gray-800 dark:text-gray-200">
-              Habitant à Rennes, je suis Alternant développeur web Chez Yes We Dev.
+              Habitant Rennes, je suis Alternant développeur web Chez Yes We Dev.
               Scroller pour en savoir plus sur moi !
             </p>
           </div>
           <div className='flex justify-center '>
-            <Image src={profilPic} className="rounded-full w-80 h-80 object-cover drop-shadow-2xl " />
+            <Image src={profilPic} className="rounded-full w-60 h-60 md:w-80 md:h-80 object-cover drop-shadow-2xl " />
+          </div>
+        </section>
+
+        <section className="min-h-screen">
+          <div className="container px-20 space-y-20 ">
+            <div>
+              <h2>TITRE 1</h2>
+              <p></p>
+            </div>
+            <div>
+              <h2>TITRE 2</h2>
+              <p></p>
+            </div>
+            <div>
+              <h2>TITRE 3</h2>
+              <p></p>
+            </div>
+            <div>
+              <h2>TITRE 4</h2>
+              <p></p>
+            </div>
           </div>
         </section>
       </main>
